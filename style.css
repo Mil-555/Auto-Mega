@@ -1,0 +1,161 @@
+body{
+    margin: auto;
+}
+header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #1a1919;
+    position: fixed;
+}
+.lewy,.prawy{
+    color: white;
+}
+.lewy{
+    display: flex;
+}
+.napis{
+    font-size: 1.2em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*ustaw flex, align-items, justify-content*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*jeśli lista będzie miała wysokość header to można align-items*/
+    height: 70px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    font-size: 22px;
+}
+nav a:hover{
+    color: red;
+    transition: 0.2s;
+}
+@media screen and (max-width: 550px){
+    header{
+        display: block;
+        height: auto;
+    }
+    nav ul{
+        display: block;
+        height: auto;
+        padding-top: 20px;
+    }
+    nav li{
+        padding: 7px 9px;
+    }
+}
+section{
+    max-width: 1260px;
+    height: 470px;
+    background-image: url("./images/car-repair-362150_1280.jpg");
+    margin: auto;
+    background-position: center top;
+    padding-top: 50px;
+}
+.ramka{
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ramka p{
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.ramka h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+.ramka a{
+    text-decoration: none;
+    color: red;
+    font-weight: 700px;
+}
+.ramka a:hover{
+    text-decoration: underline;
+}
+.ramka button{
+    padding: 15px 25px;
+    background-color: darkgray;
+    border-radius: 10px;
+    color: white;
+    border: solid 1px rgb(69, 69, 69);
+    font-size: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+.ramka button:hover{
+    background-color: rgb(80, 80, 80);
+}
+.powody img{
+    height: 70px;
+}
+.powody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.powod{
+    text-align: center;
+    width: 500px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.uslugi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.usluga{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+.usluga img{
+    height: 250px;
+}
+.warsztat{
+    padding-top: 150px;
+}
+html{
+    scroll-behavior: smooth;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
